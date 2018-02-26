@@ -1,0 +1,9 @@
+Building Rubex
+
+See doc/readme-qt.rst for instructions on building Rubex-Qt,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of Rubex.
+
+See doc/build-*.txt for instructions on building rubexd,
+the intended-for-services, no-graphical-interface, reference
+implementation of Rubex.
