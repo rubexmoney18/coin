@@ -1073,7 +1073,11 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
 {
 //    int64 nSubsidy = nFees;
     int64 nCoin = 100000000;
-   int64 nSubsidy = 10 * nCoin;
+   
+   return 1 * nCoin +nFees;
+ /*
+ 
+   int64 nSubsidy = 20 * nCoin;
 
    if(nHeight == 50){
 	   
@@ -1090,6 +1094,8 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
     nSubsidy >>= (nHeight / 10000); // Rubex: everyt 10000 block
 
     return nSubsidy * nCoin  +nFees;
+*/
+
 }
 
 static const int64 nTargetTimespan = 302400; // Rubex: 3.5 days
