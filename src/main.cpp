@@ -1071,31 +1071,16 @@ uint256 static GetOrphanRoot(const CBlockHeader* pblock)
 
 int64 static GetBlockValue(int nHeight, int64 nFees)
 {
-//    int64 nSubsidy = nFees;
     int64 nCoin = 100000000;
-   
-   return 1 * nCoin +nFees;
- /*
- 
-   int64 nSubsidy = 20 * nCoin;
+
+    int64 nSubsidy = 5 * nCoin;
 
    if(nHeight == 50){
-	   
-	   return 31999010 * nCoin + nFees;
-   }
-   
-   if(nHeight >1 &&  nHeight < 100 )
-   {
-	    return 10 * nCoin + nFees;	   
-   }
 
+           return 31999010 * nCoin + nFees;
+    }
 
-    // Subsidy is cut in half every 10000 blocks, 
-    nSubsidy >>= (nHeight / 10000); // Rubex: everyt 10000 block
-
-    return nSubsidy * nCoin  +nFees;
-*/
-
+    return nSubsidy + nFees;
 }
 
 static const int64 nTargetTimespan = 302400; // Rubex: 3.5 days

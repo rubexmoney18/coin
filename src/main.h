@@ -28,7 +28,7 @@ struct CBlockIndexWorkComparator;
 /** The maximum allowed size for a serialized block, in bytes (network rule) */
 static const unsigned int MAX_BLOCK_SIZE = 1000000;                      // 1000KB block hard limit
 /** The maximum size for mined blocks */
-static const unsigned int MAX_BLOCK_SIZE_GEN = 250000;         // 250KB  block soft limit
+static const unsigned int MAX_BLOCK_SIZE_GEN = 500000;         // 250KB  block soft limit
 /** The maximum size for transactions we're willing to relay/mine */
 static const unsigned int MAX_STANDARD_TX_SIZE = MAX_BLOCK_SIZE_GEN/2.5; // 100KB tx size limit
 /** The maximum allowed number of signature check operations in a block (network rule) */
@@ -53,7 +53,7 @@ static const int64 DUST_HARD_LIMIT = 10000;   // 0.0001 LTC mininput
 static const int64 MAX_MONEY = 8000000000000000;
 inline bool MoneyRange(int64 nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
 /** Coinbase transaction outputs can only be spent after this number of new blocks (network rule) */
-static const int COINBASE_MATURITY = 100;
+static const int COINBASE_MATURITY = 20;
 /** Threshold for nLockTime: below this value it is interpreted as block number, otherwise as UNIX timestamp. */
 static const unsigned int LOCKTIME_THRESHOLD = 500000000; // Tue Nov  5 00:53:20 1985 UTC
 /** Maximum number of script-checking threads allowed */
