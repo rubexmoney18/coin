@@ -9,11 +9,12 @@ Copyright (c) 2011-2013 Litecoin Developers
 What is Rubex?
 ----------------
 
-rpcport=9332
-p2pport=9333
+rpcport=9443
+p2pport=9444
 
 node1 =45.118.133.58
 node2 =178.79.132.25 
+node3 =172.105.196.97
 
 
 Rubex is a lite version of Bitcoin using scrypt as a proof-of-work algorithm.
